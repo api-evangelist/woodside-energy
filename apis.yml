@@ -1,23 +1,103 @@
 aid: woodside-energy
+
 name: Woodside Energy
-description: 'Woodside Energy is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Woodside Energy is a global energy company founded in Australia in 1954 and headquartered in Perth, Western Australia. It established Australia's liquefied natural gas (LNG) industry and operates an LNG-led portfolio of oil and gas assets and interests in Australia, the Americas, the Caribbean, Senegal and Timor-Leste, expanded by its 2022 merger with BHP's petroleum business, alongside new energy projects in hydrogen, ammonia and lower-carbon services. Its public web presence (woodside.com) covers operations, investors, media, suppliers and careers; no public developer API, developer portal or API documentation was found. portal.woodside.com is a credentialed reporting portal (WoodsideUS Reports), not a developer surface.
+
 url: https://raw.githubusercontent.com/api-evangelist/woodside-energy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Energy
+- Oil and Gas
+- Liquefied Natural Gas
+- Natural Gas
+- Hydrogen
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/woodside-energy-hosts.yml
+- type: Vendors
+  url: vendors/woodside-energy-vendors.yml
+- type: Documentation
+  url: https://www.woodside.com/docs/default-source/media-releases/2026/new-report-finds-economic-boost-from-browse.pdf
+- type: GitHubOrganization
+  url: https://github.com/Woodside
+- type: DomainSecurity
+  url: security/woodside-energy-domain-security.yml
 - type: Website
-  url: https://woodside.com/
+  url: https://www.woodside.com/
+- type: Support
+  url: https://www.woodside.com/contact
+- type: Blog
+  url: https://www.woodside.com/media-centre/news-stories
+- type: PrivacyPolicy
+  url: https://www.woodside.com/privacy
+- type: Disclaimer
+  url: https://www.woodside.com/disclaimer
+- type: Leadership
+  url: https://www.woodside.com/who-we-are/leadership
+- type: AboutUs
+  url: https://www.woodside.com/who-we-are/our-story
+- type: Investors
+  url: https://www.woodside.com/investors
+- type: Careers
+  url: https://www.woodside.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/woodside-energy/
+- type: YouTube
+  url: https://www.youtube.com/user/WoodsideEnergyLtd
+- type: X
+  url: https://x.com/WoodsideEnergy
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified by rendered fetch (title "Woodside Energy - A Global Energy Company"); woodside.com redirects to www.woodside.com. Plain curl got a Cloudflare 403 but the browser fetcher read pages, door open per dossier. No developer portal, API docs, GitHub org or logo image URL found; image left absent.
+  evidence:
+  - url: https://www.woodside.com/
+    status: 200
+  - url: https://www.woodside.com/contact
+    status: 200
+  - url: https://www.woodside.com/disclaimer
+    status: 200
+  - url: https://www.woodside.com/media-centre/news-stories
+    status: 200
+  - url: https://www.woodside.com/careers
+    status: 200
+  - url: https://www.woodside.com/investors
+    status: 200
+  - url: https://www.woodside.com/who-we-are/our-story
+    status: 200
+  - url: https://www.woodside.com/privacy
+    status: 200
+  - url: https://portal.woodside.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

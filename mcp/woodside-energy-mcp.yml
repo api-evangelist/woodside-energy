@@ -1,0 +1,21 @@
+name: Woodside Energy MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official Woodside Energy MCP server (hosted or local) was found, and there is no public
+  OpenAPI contract from which to derive a candidate tool list. Woodside publishes no developer
+  API or developer portal; portal.woodside.com is a credentialed reporting portal, not an API.
+source:
+- url: https://www.woodside.com/llms.txt
+  status: 404
+- url: https://woodside.com/llms.txt
+  status: 404
+- note: Pre-flight contract discovery (2026-10-22) on api.woodside.com, woodside.com, portal.woodside.com, www.woodside.com found no OpenAPI, AsyncAPI, GraphQL or MCP endpoint; no MCP docs or tool table found.
+- note: 'Web search "Woodside Energy MCP server OR developer API" (2026-10-22) returned only unrelated third-party energy MCP servers.'
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

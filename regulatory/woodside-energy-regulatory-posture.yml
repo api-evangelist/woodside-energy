@@ -1,0 +1,45 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://www.woodside.com/privacy
+note: Read from the Woodside Privacy Statement (last updated 11 November 2024). A plain curl GET returned a Cloudflare challenge (403); the page was read with fetch-url.py, which returned 200. No subprocessor list, AI disclosure, accessibility statement, GPC statement or incident-notification SLA was found on the page.
+signals:
+  data_subject_request:
+    url: https://www.woodside.com/privacy
+    section: 5. Your privacy rights
+    evidence:
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'You may have certain privacy rights and may include the right to: access your personal information; correct your personal information if it is inaccurate or incomplete; ask us to erase your personal information; ask us to restrict using or sharing your personal information; object to how we use or share your personal information; us to transfer your personal information to another organisation or give it to you; and/or withdraw consent if you have provided consent for us to use or share your personal information in a certain way.'
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: You can exercise your privacy rights or make a privacy complaint by contacting our Privacy Officer.
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: We aim to respond to all requests and privacy complaints within one month.
+    note: Lists access, correction, erasure, restriction, objection, portability (transfer) and consent-withdrawal rights, exercised by contacting the Privacy Officer, with a stated aim of responding within one month. No self-service form or API is documented.
+  data_residency:
+    url: https://www.woodside.com/privacy
+    section: 3.3 Where we share your personal information to
+    evidence:
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: The global nature of our operations means that at times we may need to share your personal information to our related or subsidiary companies or a third party (as explained in section 3.1) who may be in a different jurisdiction to where your personal information was collected.
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'Some of the countries we may share personal information with include: Australia, Canada, China, Ireland, Indonesia, Japan, Mexico, Myanmar, New Zealand, Norway, Republic of Korea, Senegal, Singapore, Thailand, Timor-Leste, Trinidad and Tobago, the European Union, the United Kingdom, and the United States of America.'
+    note: A cross-border transfer disclosure naming destination countries; this is not a customer-selectable residency offering.
+  data_retention:
+    url: https://www.woodside.com/privacy
+    section: 3.4 How long we keep your personal information for
+    evidence:
+    - source: https://www.woodside.com/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: We keep your personal information for as long as necessary to fulfill the purpose for which it was collected and to comply with our applicable legal requirements.
+    note: Purpose-bound retention principle only; no fixed retention periods are published.

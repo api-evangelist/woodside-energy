@@ -1,0 +1,109 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 4
+  other_domain: 0
+  platform: 4
+  roles:
+  - api
+  - other
+  - source
+  - website
+hosts:
+- host: api.woodside.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: woodside.com
+  role: api
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: portal.woodside.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: woodside.com
+  role: other
+  relation: own
+- host: woodside.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: woodside.com
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.woodside.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  - Website
+  - Support
+  - Blog
+  - PrivacyPolicy
+  - Disclaimer
+  - Leadership
+  - AboutUs
+  - Investors
+  - Careers
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: woodside.com
+  role: website
+  relation: own
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - pointer
+  types:
+  - X
+  serves: []
+  registrable_domain: x.com
+  role: other
+  relation: platform

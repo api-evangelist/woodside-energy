@@ -1,0 +1,13 @@
+generated: '2026-10-22'
+method: none
+name: Woodside Energy packages
+note: Checked, nothing found. Woodside Energy publishes no developer API, SDK or CLI. The GitHub org github.com/woodside (name "Woodside Energy", blog https://www.woodside.com) has 0 public repositories (api.github.com/orgs/woodside, 200). registry.npmjs.org/woodside and pypi.org/pypi/woodside/json both returned 404. A web search for Woodside Energy developer API/SDK returned no first-party results.
+checked:
+- url: https://api.github.com/orgs/woodside
+  status: 200
+  result: Woodside Energy org, public_repos 0
+- url: https://registry.npmjs.org/woodside
+  status: 404
+- url: https://pypi.org/pypi/woodside/json
+  status: 404
+packages: []

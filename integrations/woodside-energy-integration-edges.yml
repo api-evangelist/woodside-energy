@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/woodside-energy/integrations
+- https://n8n.io/integrations/woodside-energy/
+- https://composio.dev/toolkits/woodside-energy
+- https://monid.ai/tools/woodside-energy
+checked:
+- https://www.woodside.com/
+- https://portal.woodside.com/
+- https://api.github.com/orgs/woodside
+- https://composio.dev/toolkits/woodside-energy
+- https://monid.ai/tools/woodside-energy
+- https://n8n.io/integrations/woodside-energy/
+- https://zapier.com/apps/woodside-energy/integrations
+summary: Woodside Energy is an oil, gas and LNG producer with no public developer API, developer portal or integrations/marketplace
+  page. No marketplace listing, claimed partner integration page or contract was found. portal.woodside.com is a
+  credentialed reporting portal, not an integration surface.
+marketplace_apps: []
+edges: []
+templates: []
